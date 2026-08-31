@@ -6,7 +6,7 @@ using Soenneker.Persona.OpenApiClientUtil.Abstract;
 namespace Soenneker.Persona.OpenApiClientUtil.Registrars;
 
 /// <summary>
-/// Registers the OpenAPI client utility for dependency injection.
+/// Registers the Persona API client provider.
 /// </summary>
 public static class PersonaOpenApiClientUtilRegistrar
 {

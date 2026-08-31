@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 namespace Soenneker.Persona.OpenApiClientUtil.Abstract;
 
 /// <summary>
-/// Exposes a cached OpenAPI client instance.
+/// Provides a cached Persona identity API client backed by the configured HTTP provider.
 /// </summary>
-public interface IPersonaOpenApiClientUtil: IDisposable, IAsyncDisposable
+public interface IPersonaOpenApiClientUtil : IDisposable, IAsyncDisposable
 {
     /// <summary>
-    /// Gets the value.
+    /// Gets the cached Persona client, creating it on the first call.
     /// </summary>
     /// <param name="cancellationToken">The cancellation token.</param>
-    /// <returns>A task containing the result of the operation.</returns>
+    /// <returns>The configured Persona client.</returns>
     ValueTask<PersonaOpenApiClient> Get(CancellationToken cancellationToken = default);
 }

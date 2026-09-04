@@ -11,6 +11,7 @@ using Soenneker.Utils.AsyncSingleton;
 
 namespace Soenneker.Persona.OpenApiClientUtil;
 
+/// <inheritdoc cref="IPersonaOpenApiClientUtil" />
 public sealed class PersonaOpenApiClientUtil : IPersonaOpenApiClientUtil
 {
     private readonly AsyncSingleton<PersonaOpenApiClient> _client;
